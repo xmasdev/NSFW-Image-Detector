@@ -1,27 +1,29 @@
-
 # Image Classification Project
-
-This project focuses on classifying images into five distinct categories using machine learning. It utilizes pretrained InceptionV3.
+Multi class image classification project, transfer learning using pretrained InceptionV3. 
 
 ## Dataset
-
 The dataset used for training the models can be found at [Hugging Face Datasets](https://huggingface.co/datasets/deepghs/image_classification).
 
-## Project Status
-
-This project is currently discontinued. However, it is complete and functional with an accuracy of approximately 85%.
-
-## Model Output
-{`drawings`: 0, `hentai`: 1, `neutral`: 2, `porn`: 3, `sexy`: 4}
+## Status
+Currently discontinued, however working correctly with a test_accuracy of about 85%.
 
 ## Usage
-
-To use these models, input an image of the specified dimensions into the corresponding model. The model will then output the category to which the image is most likely to belong.
-
-## Contributing
-
-Contributions are welcome! Please read the contributing guidelines before getting started.
+Make sure you have the required modules installed modules installed.
+``` bash
+pip install numpy, tensorflow, keras
+```
+Then run the `main.py` file with the root directory structure as
+```
+| - data
+|     | - train
+|     | - validation
+|     | - test
+| - main.py
+| - predict_image.py
+```
+This will create the required model file. <br>
+To run the model, run the `predict_image.py` after editing the `image_src` variable inside.
 
 ## License
-
 This project is licensed under the terms of the MIT license.
+
